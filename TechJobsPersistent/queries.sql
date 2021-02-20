@@ -7,8 +7,7 @@
 --Part 2
 
 --SELECT *
---FROM techjobs.Employers
---WHERE techjobs.job.location = "St. Louis City";
+FROM techjobs.Employers * WHERE techjobs.job.location = "St. Louis City";
 
 --Part 3
 
