@@ -6,8 +6,15 @@
 
 --Part 2
 
---SELECT *
-FROM techjobs.Employers * WHERE techjobs.job.location = "St. Louis City";
+SELECT *
+FROM employers
+WHERE Location = "St. Louis City";
 
 --Part 3
 
+SELECT *
+FROM techjobs.skills
+LEFT JOIN jobskills
+ON jobskills.SkillId = skills.Id
+WHERE jobskills.JobId IS NOT NULL
+ORDER BY Name ASC;
